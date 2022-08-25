@@ -255,7 +255,7 @@ import { Badge } from '@douyinfe/semi-ui';
         <Badge count={5} />
         <br/>
         <br/>
-        <Badge count='NEW' theme='light' />
+        <Badge count='New' theme='light' />
         <br/>
         <br/>
         <Badge count={99} overflowCount={10} type='danger' />
