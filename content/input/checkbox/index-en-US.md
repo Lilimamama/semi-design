@@ -89,9 +89,9 @@ import { Checkbox } from '@douyinfe/semi-ui';
 
 () => (
     <div>
-        <Checkbox defaultChecked={false} disabled aria-label="Checkbox demo">UnChecked Disabled</Checkbox>
+        <Checkbox defaultChecked={false} disabled aria-label="Checkbox demo">Unchecked disabled</Checkbox>
         <br />
-        <Checkbox defaultChecked disabled aria-label="Checkbox demo">Checked Disabled</Checkbox>
+        <Checkbox defaultChecked disabled aria-label="Checkbox demo">Checked disabled</Checkbox>
     </div>
 );
 ```
@@ -174,10 +174,10 @@ import { CheckboxGroup } from '@douyinfe/semi-ui';
 
 () => {
     const options = [
-        { label: 'semi', value: 'semi' },
-        { label: 'hotsoon', value: 'hotsoon' },
-        { label: 'pipixia', value: 'pipixia' },
-        { label: 'toutiao', value: 'toutiao' }
+        { label: 'Semi', value: 'semi' },
+        { label: 'Hotsoon', value: 'hotsoon' },
+        { label: 'Pipixia', value: 'pipixia' },
+        { label: 'Toutiao', value: 'toutiao' }
     ];
     return (
         <CheckboxGroup options={options} direction='horizontal' aria-label="CheckboxGroup demo" />
@@ -319,17 +319,17 @@ import { CheckboxGroup, Checkbox } from '@douyinfe/semi-ui';
 
 () => (
     <CheckboxGroup type='card' defaultValue={['1', '3']} direction='vertical' aria-label="Checkbox demo">
-        <Checkbox value={'1'} disabled extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'1'} disabled extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'2'} disabled extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'2'} disabled extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'3'} extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'3'} extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'4'} extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'4'} extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
     </CheckboxGroup>
 );
@@ -346,17 +346,17 @@ import { CheckboxGroup, Checkbox } from '@douyinfe/semi-ui';
 
 () => (
     <CheckboxGroup type='pureCard' defaultValue={['1', '3']} direction='vertical' aria-label="Checkbox demo">
-        <Checkbox value={'1'} disabled extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'1'} disabled extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'2'} disabled extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'2'} disabled extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'3'} extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'3'} extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
-        <Checkbox value={'4'} extra='Checkbox Description' style={{width:280}}>
-            Checkbox Title
+        <Checkbox value={'4'} extra='Checkbox description' style={{width:280}}>
+            Checkbox title
         </Checkbox>
     </CheckboxGroup>
 );
