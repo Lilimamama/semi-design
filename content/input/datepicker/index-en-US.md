@@ -438,18 +438,18 @@ function Demo() {
                 value={date}
                 onChange={handleDateChange}
                 dropdownClassName="components-datepicker-demo-slot"
-                placeholder="Please select a schedule"
+                placeholder="Select a schedule"
             />
             <br /><br />
             <DatePicker
                 bottomSlot={<BottomSlot />}
-                placeholder="Please select release time"
+                placeholder="Select release time"
             />
             <br /><br />
             <DatePicker
                 type="month"
                 bottomSlot={<MonthBottomSlot />}
-                placeholder="Please select month"
+                placeholder="Select month"
             />
             <br /><br />
             <DatePicker 
@@ -463,7 +463,7 @@ function Demo() {
                 type="dateTimeRange"
                 bottomSlot={<BottomSlot />}
                 style={{ width: 400 }}
-                placeholder="Please select a time range"
+                placeholder="Select a time range"
             />
         </div>
     );
@@ -697,7 +697,7 @@ function Demo() {
         if (Array.isArray(date) && date.length) {
             return `${dateFns.format(date[0], formatToken)} ~ ${dateFns.format(date[1], formatToken)}`;
         } else {
-            return 'Please select a date range';
+            return 'Select a date range';
         }
     };
 
