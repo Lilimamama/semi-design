@@ -27,7 +27,7 @@ import { Anchor } from '@douyinfe/semi-ui';
 
 () => (
     <Anchor>
-        <Anchor.Link href="#Basic_Usage" title="Basic Usage" />
+        <Anchor.Link href="#Basic_Usage" title="Basic sage" />
         <Anchor.Link href="#Components" title="Components" />
         <Anchor.Link href="#Design" title="Design" />
         <Anchor.Link href="#Blocks" title="Blocks" />
@@ -133,7 +133,7 @@ import { Anchor } from '@douyinfe/semi-ui';
                 targetOffset={60}
                 offsetTop={100}>
                 <Anchor.Link href="#Size" title="Size" />
-                <Anchor.Link href="#Rail_Theme" title="Rail Theme" />
+                <Anchor.Link href="#Rail_Theme" title="Rail theme" />
                 <Anchor.Link href="#Design" title="Design" />
                 <Anchor.Link href="#Blocks" title="Blocks" />
                 <Anchor.Link href="#Theme" title="Theme" />
@@ -159,7 +159,7 @@ import { Anchor } from '@douyinfe/semi-ui';
                 targetOffset={60}
                 offsetTop={100}>
                 <Anchor.Link href="#Size" title="Size" />
-                <Anchor.Link href="#Rail_Theme" title="Rail Theme" />
+                <Anchor.Link href="#Rail_Theme" title="Rail theme" />
                 <Anchor.Link href="#Design" title="Design" />
                 <Anchor.Link href="#Blocks" title="Blocks" />
                 <Anchor.Link href="#Theme" title="Theme" />
@@ -185,7 +185,7 @@ import { Anchor } from '@douyinfe/semi-ui';
                 targetOffset={60}
                 offsetTop={100}>
                 <Anchor.Link href="#Size" title="Size" />
-                <Anchor.Link href="#Rail_Theme" title="Rail Theme" />
+                <Anchor.Link href="#Rail_Theme" title="Rail theme" />
                 <Anchor.Link href="#Design" title="Design" />
                 <Anchor.Link href="#Blocks" title="Blocks" />
                 <Anchor.Link href="#Theme" title="Theme" />
@@ -214,7 +214,7 @@ import { Anchor } from '@douyinfe/semi-ui';
                 getContainer={getContainer}
                 targetOffset={60}
                 offsetTop={100}>
-                <Anchor.Link href="#Auto_Collapse" title="1. Auto Collapse">
+                <Anchor.Link href="#Auto_Collapse" title="1. Auto collapse">
                     <Anchor.Link href="#Components" title="1.1 Components">
                         <Anchor.Link href="#Avatar" title="1.1.1 Avatar" />
                         <Anchor.Link href="#Button" title="1.1.2 Button" />
@@ -245,7 +245,7 @@ import { Anchor } from '@douyinfe/semi-ui';
                 getContainer={getContainer}
                 targetOffset={60}
                 offsetTop={100}>
-                <Anchor.Link href="#Auto_Collapse" title="1. Auto Collapse">
+                <Anchor.Link href="#Auto_Collapse" title="1. Auto collapse">
                     <Anchor.Link href="#Components" title="1.1 Components">
                         <Anchor.Link href="#Avatar" title="1.1.1 Avatar" />
                         <Anchor.Link href="#Button" title="1.1.2 Button" />
