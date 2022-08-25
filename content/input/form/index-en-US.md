@@ -129,7 +129,7 @@ import { Form } from '@douyinfe/semi-ui';
                         <Form.Select.Option value="user">User</Form.Select.Option>
                         <Form.Select.Option value="guest">Guest</Form.Select.Option>
                     </Form.Select>
-                    <Form.Input field='userName' label='UserName' />
+                    <Form.Input field='userName' label='User name' />
                     <Form.Input field='password' label='Password' />
                     <code style={{marginTop: 30}}>{JSON.stringify(formState)}</code>
                 </>
@@ -153,7 +153,7 @@ class Demo extends React.Component {
         const fields = ({ formState, formApi, values }) => (
             <>
                 <Form.Input field='Role'/>
-                <Form.Input field='UserName' />
+                <Form.Input field='User name' />
                 <Form.Input field='Password' />
                 <code style={{marginTop: 30}}>{JSON.stringify(formState)}</code>
             </>
@@ -258,7 +258,7 @@ class BasicDemoWithInit extends React.Component {
                             multiple
                             style={style}
                             placeholder='Choose application'
-                            label="Application（Multiple Select）"
+                            label="Application（Multiple select）"
                         >
                             <Select.Option value="abc">Semi</Select.Option>
                             <Select.Option value="hotsoon">Vigo</Select.Option>
@@ -281,8 +281,8 @@ class BasicDemoWithInit extends React.Component {
                         <Form.TreeSelect
                             field="tree"
                             style={style}
-                            label='Node（TreeSelect）'
-                            placeholder='Select Service Node'
+                            label='Service node（TreeSelect）'
+                            placeholder='Select service node'
                             treeData={treeData}
                             filterTreeNode
                         >
@@ -294,7 +294,7 @@ class BasicDemoWithInit extends React.Component {
                         <TextArea
                             style={style}
                             field='description'
-                            label='Apply Reason（TextArea）'
+                            label='Apply reason（TextArea）'
                         />
                     </Col>
                     <Col span={12}>
@@ -326,7 +326,7 @@ class BasicDemoWithInit extends React.Component {
                 </Row>
                 <Row>
                     <Col span={12}>
-                        <TimePicker field="time" label='End Time（TimePicker）' style={{ width: '90%' }}/>
+                        <TimePicker field="time" label='End time（TimePicker）' style={{ width: '90%' }}/>
                     </Col>
                     <Col span={12}>
                         <InputNumber field='number' label='Number of applications（InputNumber）' initValue={20} style={style}/>
@@ -393,12 +393,12 @@ import { Form, Row, Col, Toast, TextArea } from '@douyinfe/semi-ui';
             ({ formState, values, formApi }) => (
                 <Row>
                     <Col span={12}>
-                        <Form.Input field='username' placeholder='Try input something'/>
-                        <Form.Input field='user[0]' placeholder='Try input something'/>
-                        <Form.Input field='siblings.1' placeholder='Try input something'/>
-                        <Form.Input field="siblings['2']" placeholder='Try input something'/>
-                        <Form.Input field='parents[0].name' placeholder='Try input something'/>
-                        <Form.Input field="parents[1]['name']" placeholder='Try input something'/>
+                        <Form.Input field='User name' placeholder='Try input something'/>
+                        <Form.Input field='User[0]' placeholder='Try input something'/>
+                        <Form.Input field='Siblings.1' placeholder='Try input something'/>
+                        <Form.Input field="Siblings['2']" placeholder='Try input something'/>
+                        <Form.Input field='Parents[0].name' placeholder='Try input something'/>
+                        <Form.Input field="Parents[1]['name']" placeholder='Try input something'/>
                     </Col>
                     <Col span={10} offset={1} style={{marginTop: 12}}>
                         <Form.Label text='formState.values in real time：'></Form.Label>
@@ -429,7 +429,7 @@ import { Form, Button, Toast } from '@douyinfe/semi-ui';
         <Form onSubmit={values => handleSubmit(values)} style={{width: 400}}>
             {({formState, values, formApi}) => (
                 <>
-                    <Form.Input field='phone' label='PhoneNumber' style={{ width: '100%' }} placeholder='Enter your phone number'></Form.Input>
+                    <Form.Input field='phone' label='Phone number' style={{ width: '100%' }} placeholder='Enter your phone number'></Form.Input>
                     <Form.Input field='password' label='Password' style={{ width: '100%' }} placeholder='Enter your password'></Form.Input>
                     <Form.Checkbox field='agree' noLabel>I have read and agree to the terms of service</Form.Checkbox>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -454,7 +454,7 @@ import { Form } from '@douyinfe/semi-ui';
 
 () => (
     <Form layout='horizontal'>
-        <Form.Input field='phone' label='PhoneNumber' placeholder='Enter your phone number'></Form.Input>
+        <Form.Input field='phone' label='Phone number' placeholder='Enter your phone number'></Form.Input>
         <Form.Input field='password' label='Password' placeholder='Enter your password'></Form.Input>
     </Form>
 );
@@ -512,7 +512,7 @@ class BasicDemo extends React.Component {
                     style={{ padding: '10px', width: 600 }}>
                     <Form.Input
                         field="input"
-                        label="PhoneNumber"
+                        label="Phone number"
                         trigger='blur'
                         style={{width: 200}}
                         rules={[
@@ -529,14 +529,15 @@ class BasicDemo extends React.Component {
                         <Option value="kate">kate</Option>
                     </Form.Select>
                     <Form.CheckboxGroup label="Role" field='role' direction='horizontal'>
-                        <Checkbox value="admin">admin</Checkbox>
-                        <Checkbox value="user">user</Checkbox>
-                        <Checkbox value="guest">guest</Checkbox>
-                        <Checkbox value="root">root</Checkbox>
+                        <Checkbox value="Admin">admin</Checkbox>
+                        <Checkbox value="User">user</Checkbox>
+                        <Checkbox value="Guest">guest</Checkbox>
+                        <Checkbox value="Root">root</Checkbox>
                     </Form.CheckboxGroup>
                     <Form.RadioGroup field="Sex">
-                        <Radio value="1">man</Radio>
-                        <Radio value="2">woman</Radio>
+                        <Radio value="1">Man</Radio>
+                        <Radio value="2">Woman</Radio>
+                        <Radio value="2">Other</Radio>
                     </Form.RadioGroup>
                 </Form>
             </>
@@ -561,18 +562,18 @@ import { Form, Row, Col } from '@douyinfe/semi-ui';
             <Col span={8}>
                 <Form.Input
                     field="nickName1"
-                    label="NickName"
+                    label="Nick name"
                     style={{ width: '250px' }}
                     trigger='blur'
                     rules={[
-                        { required: true, message: 'required error' },
+                        { required: true, message: 'required' },
                         { type: 'string', message: 'type error' },
                         { validator: (rule, value) => value === 'semi', message: 'not semi' }
                     ]}
                 />
             </Col>
             <Col span={8}>
-                <Form.DatePicker field='date1' label='Valid Date' style={{ width: '250px' }}/>
+                <Form.DatePicker field='date1' label='Valid date' style={{ width: '250px' }}/>
             </Col>
             <Col span={8}>
                 <Form.Select label="Application" field='business1' style={{ width: '250px' }}>
@@ -586,18 +587,18 @@ import { Form, Row, Col } from '@douyinfe/semi-ui';
             <Col span={6}>
                 <Form.Input
                     field="nickName2"
-                    label="NickName"
+                    label="Nick name"
                     style={{ width: '200px' }}
                     trigger='blur'
                     rules={[
-                        { required: true, message: 'required error' },
+                        { required: true, message: 'required' },
                         { type: 'string', message: 'type error' },
                         { validator: (rule, value) => value === 'semi', message: 'not semi' }
                     ]}
                 />
             </Col>
             <Col span={6}>
-                <Form.DatePicker field='date2' label='Valid Date' style={{ width: '200px' }}/>
+                <Form.DatePicker field='date2' label='Valid date' style={{ width: '200px' }}/>
             </Col>
             <Col span={6}>
                 <Form.Select label="Application" field='business2' style={{ width: '250px' }}>
@@ -635,11 +636,11 @@ import { Form } from '@douyinfe/semi-ui';
         labelPosition='left'
         labelAlign='right'
     >
-        <Form.Input field='name' style={{width: 250}} label='Name' placeholder='Input Name' trigger='blur' />
-        <Form.Select field="role" label='Role' placeholder='Choose Role' style={{width: 250}}>
-            <Form.Select.Option value="qa">Quality Assurance</Form.Select.Option>
-            <Form.Select.Option value="rd">Software Engineer</Form.Select.Option>
-            <Form.Select.Option value="pm">Product Manager</Form.Select.Option>
+        <Form.Input field='name' style={{width: 250}} label='Name' placeholder='Input name' trigger='blur' />
+        <Form.Select field="role" label='Role' placeholder='Select role' style={{width: 250}}>
+            <Form.Select.Option value="qa">Quality assurance</Form.Select.Option>
+            <Form.Select.Option value="rd">Software engineer</Form.Select.Option>
+            <Form.Select.Option value="pm">Product manager</Form.Select.Option>
             <Form.Select.Option value="ued">Designer</Form.Select.Option>
         </Form.Select>
     </Form>
@@ -656,8 +657,8 @@ import { Form } from '@douyinfe/semi-ui';
 
 () => (
     <Form onSubmit={(values) => console.log(values)} style={{ width: 400 }}>
-        <Form.Input field='name' label='UserName' trigger='blur' noLabel={true} style={{width: 250}} placeholder='Input userName'/>
-        <Form.Select field="role" label='UserRole' style={{ width: '250px' }} noLabel={true} placeholder='Choose role'>
+        <Form.Input field='name' label='UserName' trigger='blur' noLabel={true} style={{width: 250}} placeholder='Enter user name'/>
+        <Form.Select field="role" label='UserRole' style={{ width: '250px' }} noLabel={true} placeholder='Select role'>
             <Form.Select.Option value="qa">Quality Assurance</Form.Select.Option>
             <Form.Select.Option value="rd">Software Engineer</Form.Select.Option>
             <Form.Select.Option value="pm">Product Manager</Form.Select.Option>
@@ -701,11 +702,11 @@ class AssistComponent extends React.Component {
                 labelPosition='left'
                 labelWidth={100}
             >
-                <Form.Input field='effectName' label='EffectName' style={{width: 250}}/>
+                <Form.Input field='effectName' label='Effect name' style={{width: 250}}/>
                 <Form.Select
                     style={{width: 300}}
                     field="type"
-                    label="EffectType"
+                    label="Effect type"
                 >
                     <Form.Select.Option value="faceSticker">FaceSticker</Form.Select.Option>
                     <Form.Select.Option value="backgroundSticker">BackgroundSticker</Form.Select.Option>
@@ -735,14 +736,14 @@ import React from 'react';
 import { Form } from '@douyinfe/semi-ui';
 () => (
     <Form labelPosition='inset' layout='horizontal'>
-        <Form.Input field='name' label='UserName' trigger='blur' style={{width: 250}} placeholder='Input userName'/>
-        <Form.Select field="role" label='UserRole' style={{ width: '250px' }}>
+        <Form.Input field='name' label='User name' trigger='blur' style={{width: 250}} placeholder='Enter user name'/>
+        <Form.Select field="role" label='User role' style={{ width: '250px' }}>
             <Form.Select.Option value="qa">Quality Assurance</Form.Select.Option>
             <Form.Select.Option value="rd">Software Engineer</Form.Select.Option>
             <Form.Select.Option value="pm">Product Manager</Form.Select.Option>
             <Form.Select.Option value="ued">Designer</Form.Select.Option>
         </Form.Select>
-        <Form.DatePicker field="date" label='Start Date' style={{ width: '250px' }}>
+        <Form.DatePicker field="date" label='Start date' style={{ width: '250px' }}>
         </Form.DatePicker>
     </Form>
 );
@@ -762,7 +763,7 @@ import { Form, Button } from '@douyinfe/semi-ui';
 
 () => (
     <Form onSubmit={(values) => console.log(values)} labelPosition='top' style={{ width: 400 }}>
-        <Form.InputGroup label={{ text: (<span>PhoneNumber</span>), required: true }} labelPosition='top'>
+        <Form.InputGroup label={{ text: (<span>Phone number</span>), required: true }} labelPosition='top'>
             <Form.Select style={{ width: 150 }} field='phonePrefix' initValue='+86' rules={[{ required: true }]} showClear>
                 <Form.Select.Option value='+1'>USA +1</Form.Select.Option>
                 <Form.Select.Option value='+86'>China +86</Form.Select.Option>
