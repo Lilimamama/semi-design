@@ -283,7 +283,7 @@ function Demo() {
             footerStyle={{ display: 'flex', justifyContent: 'flex-end' }}
             footer={
                 <Space>
-                    <Button theme='borderless' type='primary'>Featured Case</Button>
+                    <Button theme='borderless' type='primary'>Featured case</Button>
                     <Button theme='solid' type='primary'>Start</Button>
                 </Space>
             }
@@ -354,29 +354,29 @@ function Demo() {
         >
             <Row gutter={[16,16]}>
                 <Col span={8}>
-                    <Card title='Card Title' bordered={false} >
+                    <Card title='Card title' bordered={false} >
                         Card Content
                     </Card>
                 </Col>
                 <Col span={8}>
-                    <Card title='Card Title' bordered={false} >
+                    <Card title='Card title' bordered={false} >
                         Card Content
                     </Card>
                 </Col>
                 <Col span={8}>
-                    <Card title='Card Title' bordered={false} >
+                    <Card title='Card title' bordered={false} >
                         Card Content
                     </Card>
                 </Col>
             </Row>
             <Row gutter={[16,16]}>
                 <Col span={16}>
-                    <Card title='Card Title' bordered={false} >
+                    <Card title='Card title' bordered={false} >
                         Card Content
                     </Card>
                 </Col>
                 <Col span={8}>
-                    <Card title='Card Title' bordered={false} >
+                    <Card title='Card title' bordered={false} >
                         Card Content
                     </Card>
                 </Col>
