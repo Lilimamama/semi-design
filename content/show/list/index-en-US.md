@@ -28,9 +28,9 @@ import { List } from '@douyinfe/semi-ui';
 class SimpleList extends React.Component {
     render() {
         const data = [
-            'Do not go gentle into that good night,',
-            'Old age should burn and rave at close of day;',
-            'Rage, rage against the dying of the light.',
+            'Do not go gentle into that good night',
+            'Old age should burn and rave at close of day',
+            'Rage, rage against the dying of the light',
         ];
 
         return (
@@ -104,7 +104,7 @@ class ContentList extends React.Component {
             </p>,
             // eslint-disable-next-line react/jsx-key
             <p style={{ color: 'var(--semi-color-text-2)', margin: '4px 0', width: 500 }}>
-                Come what come may, time and the hour run through the roughest day.
+                Come what come may, time and the hour run through the roughest day
             </p>,
             // eslint-disable-next-line react/jsx-key
             <p style={{ color: 'var(--semi-color-text-2)', margin: '4px 0', width: 500 }}>
@@ -386,7 +386,7 @@ class LoadMoreList extends React.Component {
         for (let i = 0; i < 40; i++) {
             data.push({
                 color: 'grey',
-                title: `Semi Design Title ${i}`,
+                title: `Semi Design title ${i}`,
                 loading: false,
             });
         }
@@ -444,7 +444,7 @@ class LoadMoreList extends React.Component {
                         lineHeight: '32px',
                     }}
                 >
-                    <Button onClick={() => this.onLoadMore()}>Load More</Button>
+                    <Button onClick={() => this.onLoadMore()}>Load more</Button>
                 </div>
             ) : null;
 
@@ -511,7 +511,7 @@ class ScrollLoad extends React.Component {
         for (let i = 0; i < 100; i++) {
             dataList.push({
                 color: 'grey',
-                title: `Semi Design Title ${i}`,
+                title: `Semi Design title ${i}`,
                 loading: false,
             });
         }
@@ -633,7 +633,7 @@ class VirtualizedScroll extends React.Component {
         for (let i = 0; i < 50; i++) {
             dataList.push({
                 color: 'grey',
-                title: `Semi Design Title ${i}`,
+                title: `Semi Design title ${i}`,
             });
         }
         this.data = dataList;
@@ -840,23 +840,23 @@ class DraggableList extends React.Component {
     constructor() {
         const listItems = [
             {
-                title: 'Semi Design Title 1',
+                title: 'Semi Design title 1',
                 color: 'red',
             },
             {
-                title: 'Semi Design Title 2',
+                title: 'Semi Design title 2',
                 color: 'grey',
             },
             {
-                title: 'Semi Design Title 3',
+                title: 'Semi Design title 3',
                 color: 'light-green',
             },
             {
-                title: 'Semi Design Title 4',
+                title: 'Semi Design title 4',
                 color: 'light-blue',
             },
             {
-                title: 'Semi Design Title 5',
+                title: 'Semi Design title 5',
                 color: 'pink',
             },
         ];
@@ -929,8 +929,8 @@ import { SortableContainer, SortableElement, sortableHandle } from 'react-sortab
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow',
+        'Three body',
+        'Snow in the snow',
         'Saharan story',
         'Those things',
         'A little monk of Zen',
@@ -1006,8 +1006,8 @@ import { List, Pagination } from '@douyinfe/semi-ui';
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow',
+        'Three body',
+        'Snow in the snow',
         'Saharan story',
         'Those things in the Ming Dynasty',
         'A little monk of Zen',
@@ -1060,14 +1060,14 @@ import { IconSearch } from '@douyinfe/semi-icons';
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow',
+        'Three body',
+        'Snow in the snow',
         'Saharan story',
         'Those things in the Ming Dynasty',
         'A little monk of Zen',
         'Dune',
         'The courage to be hated',
-        'Crime and Punishment',
+        'Crime and punishment',
     ];
 
     const [list, setList] = useState(data);
@@ -1113,14 +1113,14 @@ import { IconMinusCircle, IconPlusCircle } from '@douyinfe/semi-icons';
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow',
+        'Three body',
+        'Snow in the snow',
         'Saharan story',
         'Those things in the Ming Dynasty',
         'A little monk of Zen',
         'Dune',
         'The courage to be hated',
-        'Crime and Punishment',
+        'Crime and punishment',
         'Moon and sixpence',
         'The silent majority',
         'First person singular',
@@ -1178,14 +1178,14 @@ import { List, Input, Button, Checkbox, Radio, RadioGroup, CheckboxGroup } from 
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow',
+        'Three body',
+        'Snow in the snow',
         'Saharan story',
         'Those things in the Ming Dynasty',
         'A little monk of Zen',
         'Dune',
         'The courage to be hated',
-        'Crime and Punishment',
+        'Crime and punishment',
         'Moon and sixpence',
         'The silent majority',
         'First person singular',
@@ -1246,14 +1246,14 @@ import { List, Input, Button } from '@douyinfe/semi-ui';
     const data = [
         'Siege',
         'The ordinary world',
-        'Three Body',
-        'Snow in the Snow ',
+        'Three body',
+        'Snow in the snow ',
         'Saharan story',
         'Those things in the Ming Dynasty',
         'A little monk of Zen',
         'Dune',
         'The courage to be hated',
-        'Crime and Punishment',
+        'Crime and punishment',
         'Moon and sixpence',
         'The silent majority',
         'First person singular',
