@@ -283,7 +283,7 @@ function Demo() {
             <Text link={{ href: 'https://semi.design/' }}>Open website</Text>
             <br />
             <br />
-            <Text link icon={<IconLink />} underline>Link</Text>
+            <Text link icon={<IconLink />} underline>Semi Design</Text>
         </div>
     );
 }
