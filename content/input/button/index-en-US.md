@@ -257,7 +257,7 @@ function ButtonDemo() {
             <br/><br/>
             <strong>Change Icon Position: </strong>
             <Button icon={<IconSidebar />} theme="solid" style={{ marginRight: 10 }}>Collapse</Button>
-            <Button icon={<IconChevronDown />} theme="solid" iconPosition="right">Expand Options</Button>
+            <Button icon={<IconChevronDown />} theme="solid" iconPosition="right">Expand options</Button>
             <br/><br/>
         </div>
     );
@@ -280,7 +280,7 @@ function Demo() {
             <Text link={{ href: 'https://semi.design/' }}>Link</Text>
             <br />
             <br />
-            <Text link={{ href: 'https://semi.design/' }}>Open Website</Text>
+            <Text link={{ href: 'https://semi.design/' }}>Open website</Text>
             <br />
             <br />
             <Text link icon={<IconLink />} underline>Link</Text>
