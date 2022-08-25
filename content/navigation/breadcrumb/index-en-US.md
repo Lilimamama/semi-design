@@ -24,7 +24,7 @@ import { Breadcrumb } from '@douyinfe/semi-ui';
 
 () => (
     <Breadcrumb>
-        <Breadcrumb.Item>Semi-ui</Breadcrumb.Item>
+        <Breadcrumb.Item>Semi UI</Breadcrumb.Item>
         <Breadcrumb.Item>Breadcrumb</Breadcrumb.Item>
         <Breadcrumb.Item>Default</Breadcrumb.Item>
     </Breadcrumb>
@@ -42,7 +42,7 @@ import { IconHome, IconArticle } from '@douyinfe/semi-icons';
     <Breadcrumb>
         <Breadcrumb.Item icon={<IconHome />}></Breadcrumb.Item>
         <Breadcrumb.Item icon={<IconArticle />}>Breadcrumb</Breadcrumb.Item>
-        <Breadcrumb.Item>With Icon</Breadcrumb.Item>
+        <Breadcrumb.Item>With icon</Breadcrumb.Item>
     </Breadcrumb>
 );
 ```
@@ -85,20 +85,20 @@ import { IconArrowRight } from '@douyinfe/semi-icons';
 () => (
     <div>
         <Breadcrumb separator={'>'}>
-            <Breadcrumb.Item>Semi-ui</Breadcrumb.Item>
+            <Breadcrumb.Item>Semi UI</Breadcrumb.Item>
             <Breadcrumb.Item>Breadcrumb</Breadcrumb.Item>
             <Breadcrumb.Item>Default</Breadcrumb.Item>
         </Breadcrumb>
         <br/>
         <Breadcrumb separator={<IconArrowRight size={'small'} />}>
-            <Breadcrumb.Item>Semi-ui</Breadcrumb.Item>
+            <Breadcrumb.Item>Semi UI</Breadcrumb.Item>
             <Breadcrumb.Item>Breadcrumb</Breadcrumb.Item>
             <Breadcrumb.Item>Default</Breadcrumb.Item>
         </Breadcrumb>
         <Tag>{`v>=1.16.0`}</Tag>
         <br/>
         <Breadcrumb size={'small'} >
-            <Breadcrumb.Item separator=":">Semi-ui</Breadcrumb.Item>
+            <Breadcrumb.Item separator=":">Semi UI</Breadcrumb.Item>
             <Breadcrumb.Item>Breadcrumb</Breadcrumb.Item>
             <Breadcrumb.Item>Default</Breadcrumb.Item>
         </Breadcrumb>
@@ -264,7 +264,7 @@ import { IconHome, IconArticle } from '@douyinfe/semi-icons';
 () => (
     <div>
         <Breadcrumb
-            routes={['Semi-ui', 'Breadcrumb', 'Default']}
+            routes={['Semi UI', 'Breadcrumb', 'Default']}
         />
         <br/>
         <Breadcrumb
@@ -278,10 +278,10 @@ import { IconHome, IconArticle } from '@douyinfe/semi-icons';
                     { 
                         path: '/breadcrumb', 
                         href: '/en-US/navigation/breadcrumb', 
-                        name: 'breadcrumb', 
+                        name: 'Breadcrumb', 
                         icon: <IconArticle />
                     },
-                    'with icon'
+                    'With icon'
                 ]
             }
         />
